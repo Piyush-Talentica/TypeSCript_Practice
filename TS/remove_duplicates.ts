@@ -1,0 +1,10 @@
+// code to remove duplicates from new array
+var clear_set = new Set<number>()
+let unclear_arr: number[] = [1,2,3,4,5,6,1,2,4,6,7,8,9]
+for(let i=0;i<unclear_arr.length;i++)
+{
+    clear_set.add(unclear_arr[i])
+}
+// console.log(Array.from(clear_set))
+const clear_array:number[] = Array.from(clear_set)
+console.log(clear_array)
